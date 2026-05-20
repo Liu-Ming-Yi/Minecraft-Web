@@ -79,26 +79,101 @@
                 <p>在方塊世界中會遇到的一些經典角色</p>
             </div>
             
-            <div class="cards-grid">
+            <div class="mobs-grid">
                 <!-- Creeper Card -->
-                <div class="glass-card slide-up" style="--delay: 0.1s">
-                    <div class="card-icon">💥</div>
-                    <h3>苦力怕 (Creeper)</h3>
-                    <p>Minecraft 的標誌性怪物！會無聲無息地靠近玩家然後爆炸，破壞地形與建築。</p>
+                <div class="mob-card slide-up" style="--delay: 0.1s">
+                    <div class="mob-image-wrap">
+                        <img src="assets/images/mob_creeper.png" alt="苦力怕 Creeper" class="mob-img">
+                    </div>
+                    <div class="mob-info">
+                        <div class="mob-badge danger">危險</div>
+                        <h3>苦力怕 (Creeper)</h3>
+                        <p>Minecraft 的標誌性怪物！牠不發出任何聲音地悄悄靠近玩家，然後發出「嘶嘶」聲並爆炸，能夠瞬間摧毀建築與地形，是玩家最大的噩夢。</p>
+                        <div class="mob-tags">
+                            <span class="tag">🌙 夜間出沒</span>
+                            <span class="tag">💣 自爆攻擊</span>
+                        </div>
+                    </div>
                 </div>
-                
+
                 <!-- Zombie Card -->
-                <div class="glass-card slide-up" style="--delay: 0.3s">
-                    <div class="card-icon">🧟</div>
-                    <h3>殭屍 (Zombie)</h3>
-                    <p>夜晚中最常見的敵對生物，移動緩慢但數量眾多。在陽光下會燃燒。</p>
+                <div class="mob-card slide-up" style="--delay: 0.2s">
+                    <div class="mob-image-wrap">
+                        <img src="assets/images/mob_zombie.png" alt="殭屍 Zombie" class="mob-img">
+                    </div>
+                    <div class="mob-info">
+                        <div class="mob-badge danger">危險</div>
+                        <h3>殭屍 (Zombie)</h3>
+                        <p>夜晚中最常見的敵對生物，移動緩慢但群體龐大。被牠打中的村民會感染成為殭屍村民。陽光出現後牠們就會開始燃燒。</p>
+                        <div class="mob-tags">
+                            <span class="tag">🌙 夜間出沒</span>
+                            <span class="tag">🔥 懼怕陽光</span>
+                        </div>
+                    </div>
                 </div>
-                
+
                 <!-- Enderman Card -->
-                <div class="glass-card slide-up" style="--delay: 0.5s">
-                    <div class="card-icon">👁️</div>
-                    <h3>終界使者 (Enderman)</h3>
-                    <p>高大的中立生物，擁有瞬間移動的能力。千萬不要直視牠們的眼睛！</p>
+                <div class="mob-card slide-up" style="--delay: 0.3s">
+                    <div class="mob-image-wrap">
+                        <img src="assets/images/mob_enderman.png" alt="終界使者 Enderman" class="mob-img">
+                    </div>
+                    <div class="mob-info">
+                        <div class="mob-badge neutral">中立</div>
+                        <h3>終界使者 (Enderman)</h3>
+                        <p>來自終界的高大黑色生物，擁有瞬間移動能力，且能搬運方塊。牠平時無害，但若直視牠的紫色眼睛，牠將立刻對你發動攻擊！</p>
+                        <div class="mob-tags">
+                            <span class="tag">⚡ 瞬間移動</span>
+                            <span class="tag">💧 懼怕水</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skeleton Card -->
+                <div class="mob-card slide-up" style="--delay: 0.4s">
+                    <div class="mob-image-wrap">
+                        <img src="assets/images/mob_skeleton.png" alt="骷顱弓箭手 Skeleton" class="mob-img">
+                    </div>
+                    <div class="mob-info">
+                        <div class="mob-badge danger">危險</div>
+                        <h3>骷顱弓箭手 (Skeleton)</h3>
+                        <p>持弓的骷顱怪，擅長在遠距離射箭攻擊。命中率極高，並且能夠在逃跑的同時持續攻擊，是夜晚最讓人頭痛的遠程威脅。</p>
+                        <div class="mob-tags">
+                            <span class="tag">🏹 遠程攻擊</span>
+                            <span class="tag">🔥 懼怕陽光</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Spider Card -->
+                <div class="mob-card slide-up" style="--delay: 0.5s">
+                    <div class="mob-image-wrap">
+                        <img src="assets/images/mob_spider.png" alt="蜘蛛 Spider" class="mob-img">
+                    </div>
+                    <div class="mob-info">
+                        <div class="mob-badge neutral">中立</div>
+                        <h3>蜘蛛 (Spider)</h3>
+                        <p>八隻腳的黑色生物，能夠攀爬任何牆壁與天花板，讓玩家防不勝防。白天保持中立，但夜晚降臨後便會主動發起攻擊，速度相當快。</p>
+                        <div class="mob-tags">
+                            <span class="tag">🕸️ 攀爬牆壁</span>
+                            <span class="tag">🌙 夜間敵對</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slime Card -->
+                <div class="mob-card slide-up" style="--delay: 0.6s">
+                    <div class="mob-image-wrap slime-placeholder">
+                        <div class="slime-emoji">🟢</div>
+                    </div>
+                    <div class="mob-info">
+                        <div class="mob-badge easy">低威脅</div>
+                        <h3>史萊姆 (Slime)</h3>
+                        <p>由綠色黏液組成的方塊生物，出沒於地底深處與沼澤地帶。被擊敗後會分裂成更多小史萊姆，小史萊姆無害但讓人煩惱不已。</p>
+                        <div class="mob-tags">
+                            <span class="tag">🌊 沼澤出沒</span>
+                            <span class="tag">🔀 分裂能力</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
