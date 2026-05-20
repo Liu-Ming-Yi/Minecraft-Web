@@ -321,6 +321,120 @@ footer {
     transform: translateY(0);
 }
 
+/* ----- Mob Cards ----- */
+.mobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.mob-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.mob-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.mob-image-wrap {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8), rgba(30, 41, 59, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.mob-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+    transition: transform 0.4s ease;
+    filter: drop-shadow(0 0 12px rgba(34, 197, 94, 0.3));
+}
+
+.mob-card:hover .mob-img {
+    transform: scale(1.08);
+}
+
+.slime-placeholder {
+    background: linear-gradient(135deg, rgba(34, 197, 94, 0.1), rgba(6, 182, 212, 0.1));
+}
+
+.slime-emoji {
+    font-size: 6rem;
+    animation: slimeBounce 1.5s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px rgba(34, 197, 94, 0.5));
+}
+
+@keyframes slimeBounce {
+    0%, 100% { transform: scaleY(1) translateY(0); }
+    50% { transform: scaleY(0.85) translateY(8px); }
+}
+
+.mob-info {
+    padding: 1.5rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.mob-info h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.mob-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    flex: 1;
+}
+
+.mob-badge {
+    display: inline-block;
+    padding: 0.2rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.mob-badge.danger  { background: rgba(239, 68, 68, 0.2);  color: #f87171; border: 1px solid rgba(239, 68, 68, 0.3); }
+.mob-badge.neutral { background: rgba(234, 179, 8, 0.2);   color: #fbbf24; border: 1px solid rgba(234, 179, 8, 0.3); }
+.mob-badge.easy    { background: rgba(34, 197, 94, 0.2);   color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.3); }
+
+.mob-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.tag {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    padding: 0.2rem 0.7rem;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-title { font-size: 2.5rem; }
