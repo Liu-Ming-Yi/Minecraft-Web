@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="探索 Minecraft 的無限世界！體驗生存與創造的無盡樂趣。">
+    <title>探索無限 | Minecraft</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Craft<span class="highlight">World</span></h1>
+            <ul class="nav-links">
+                <li><a href="#hero">首頁</a></li>
+                <li><a href="#modes">遊戲模式</a></li>
+                <li><a href="#mobs">經典生物</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <!-- Background image will be set in CSS -->
+        <div class="hero-overlay"></div>
+        <div class="hero-content fade-in">
+            <h2 class="hero-title">創造你的<br><span class="text-gradient">無限世界</span></h2>
+            <p class="hero-subtitle">在這個由方塊組成的世界裡，唯一的限制就是你的想像力。</p>
+            <a href="#modes" class="cta-button">開始探索</a>
+        </div>
+    </header>
+
+    <!-- Game Modes Section -->
+    <section id="modes" class="section-dark">
+        <div class="container">
+            <div class="section-header slide-up">
+                <h2>遊戲模式</h2>
+                <p>選擇適合你的冒險方式</p>
+            </div>
+            
+            <div class="cards-grid">
+                <!-- Survival Card -->
+                <div class="glass-card slide-up" style="--delay: 0.1s">
+                    <div class="card-icon">⚔️</div>
+                    <h3>生存模式 (Survival)</h3>
+                    <p>收集資源、合成工具、擊退怪物，並在夜晚中努力存活下來。從一無所有到建立專屬帝國！</p>
+                </div>
+                
+                <!-- Creative Card -->
+                <div class="glass-card slide-up" style="--delay: 0.3s">
+                    <div class="card-icon">✨</div>
+                    <h3>創造模式 (Creative)</h3>
+                    <p>擁有無限的資源，並賦予你飛行的能力。專心打造宏偉的建築或精密的紅石機關，不受任何限制。</p>
+                </div>
+                
+                <!-- Hardcore Card -->
+                <div class="glass-card slide-up" style="--delay: 0.5s">
+                    <div class="card-icon">💀</div>
+                    <h3>極限模式 (Hardcore)</h3>
+                    <p>最艱難的挑戰！難度被鎖定在最高級別，而且你只有一次生命。一旦死亡，世界將永遠無法重來。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+        <div class="glass-panel">
+            <h2>準備好開始冒險了嗎？</h2>
+            <p>數百萬名玩家正在探索他們的世界，現在就加入吧！</p>
+            <button class="cta-button glow-button">立即獲取遊戲</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Minecraft 粉絲介紹網。非官方網站，所有商標歸 Mojang AB 所有。</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
